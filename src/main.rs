@@ -5,4 +5,6 @@ fn main() {
     ownership::base::ownership();
     ownership::base::function_ownership();
     ownership::base::return_val_ownership();
+
+    ownership::reference::func_arg_reference();
 }

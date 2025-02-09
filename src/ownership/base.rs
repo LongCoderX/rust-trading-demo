@@ -1,5 +1,5 @@
-///
 /// 所有权的学习
+/// https://kaisery.github.io/trpl-zh-cn/ch04-01-what-is-ownership.html
 
 pub fn ownership() {
     println!("rust 所有权学习\n");
