@@ -7,4 +7,6 @@ fn main() {
     ownership::base::return_val_ownership();
 
     ownership::reference::func_arg_reference();
+    
+    ownership::slice::slice_function();
 }
