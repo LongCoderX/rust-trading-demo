@@ -1,6 +1,7 @@
 mod ownership;
 mod structrue;
 mod collector;
+mod generics;
 
 use clap::Parser;
 #[derive(Parser)]
@@ -30,6 +31,10 @@ fn main() {
             /* 容器 */
             collector::vectorcollector::print_vector_collector();
             collector::hashmapcollector::print_hashmap_collector();
+        },
+        "generics" => {
+            /* 泛型 */
+            generics::generics::print_generics_info();
         },
         _ => {
             panic!("Not pattern");
