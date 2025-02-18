@@ -2,6 +2,7 @@ mod ownership;
 mod structrue;
 mod collector;
 mod generics;
+mod errorhandler;
 
 use clap::Parser;
 #[derive(Parser)]
@@ -35,6 +36,10 @@ fn main() {
         "generics" => {
             /* 泛型 */
             generics::generics::print_generics_info();
+        },
+        "errorhandler" => {
+            /* 错误处理 */
+            errorhandler::resulthandler::result_handler_print();
         },
         _ => {
             panic!("Not pattern");
