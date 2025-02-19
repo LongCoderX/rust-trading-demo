@@ -1,4 +1,5 @@
 
+#[derive(Debug, Clone)]
 struct Rectangle {
     width: u32,
     height: u32,
@@ -19,9 +20,25 @@ impl Rectangle {
     }
 }
 
+impl PartialEq for Rectangle {
+    fn eq(&self, other: &Self) -> bool {
+        if self.width == other.width && self.height == other.height {
+            return true;
+        }
+        return false;
+    }
+
+    fn ne(&self, other: &Self) -> bool {
+        if self == other {
+            return false;
+        }
+        return true;
+    }
+}
+
 pub fn calculate_rect() {
     // 结构体方法
-    println!("结构体方法");
+    println!("============== No.1 Rectangle ==============");
 
     let rect1 = Rectangle {
         width: 30,
@@ -31,5 +48,14 @@ pub fn calculate_rect() {
 
     let rect2 = Rectangle::square(33);
     println!("\nThe area of the rectangle is {} square pixels.", rect2.area());
+
+    if rect1 != rect2 {
+        println!("The rect1 {:?} is ne rect2 {:?}", rect1, rect2);
+    }
+
+    let rect3 = rect1.clone();
+    if rect1 == rect3 {
+        println!("The rect1 {:?} is eq rect3 {:?}", rect1, rect3);
+    }
 }
 

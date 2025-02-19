@@ -27,6 +27,9 @@ fn main() {
             /* 结构体 */
             structrue::base::print_struct();
             structrue::rectangles::calculate_rect();
+            structrue::webevent::test_webevent();
+            structrue::user::test_user();
+            structrue::optionandresult::test_option_and_result();
         },
         "collector" => {
             /* 容器 */

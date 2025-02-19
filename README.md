@@ -30,7 +30,10 @@ src
 `-- structrue
     |-- base.rs
     |-- mod.rs
-    `-- rectangles.rs
+    |-- optionandresult.rs
+    |-- rectangles.rs
+    |-- user.rs
+    `-- webevent.rs
 ```
 
 - `main.rs` 作为调用其他模块的主函数。
@@ -47,6 +50,9 @@ src
     - `slice.rs` rust 字符串中的切片操作
 - `structrue` 结构体
     - `base.rs` 结构体的定义语法以及实例方法
-    - `rectangle.rs` 结构体方法以及关联函数
+    - `optionandresult.rs` 枚举 Option 以及 Result 的应用，在错误处理上面。同时，调用的时候，使用if let语法糖处理Option的返回值
+    - `rectangle.rs` 结构体方法以及关联函数，也实现 PartialEq trait，用于比较矩形
+    - `user.rs` 实现结构体 User 以及枚举类型 AccountStatus，作为一个字段在User中如何使用。
+    - `webevent.rs` 实现枚举 WebEvent 以及通过match处理状态。
 
     
