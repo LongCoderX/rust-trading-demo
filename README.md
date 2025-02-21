@@ -14,7 +14,8 @@ src
 |-- collector
 |   |-- hashmapcollector.rs
 |   |-- mod.rs
-|   `-- vectorcollector.rs
+|   |-- vectorcollector.rs
+|   `-- wordcount.rs
 |-- errorhandler
 |   |-- mod.rs
 |   `-- resulthandler.rs
@@ -38,8 +39,9 @@ src
 
 - `main.rs` 作为调用其他模块的主函数。
 - `collector` 集合结构体学习
-    - `vectorcollector.rs` 学习 Vec 和 String 结构体
     - `hashmapcollector.rs` 学习 HashMap 结构体
+    - `vectorcollector.rs` 学习 Vec 和 String 结构体
+    - `wordcount.rs` 实现 word count 的函数功能
 - `errorhandler` 学习错误处理以及自定义错误处理
     - `resulthandler` 错误处理的一些问题实践
 - `generics` 学习模板编程

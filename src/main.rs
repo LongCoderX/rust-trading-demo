@@ -35,6 +35,7 @@ fn main() {
             /* 容器 */
             collector::vectorcollector::print_vector_collector();
             collector::hashmapcollector::print_hashmap_collector();
+            collector::wordcount::test_word_count();
         },
         "generics" => {
             /* 泛型 */
